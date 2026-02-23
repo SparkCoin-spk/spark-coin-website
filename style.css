@@ -166,3 +166,24 @@ body {
 .token-box.glow:hover, .roadmap .glow:hover {
   box-shadow: 0 0 40px gold;
 }
+
+/* Hero header layout */
+.hero-header {
+  display: flex;
+  justify-content: space-between; /* Logo left, buttons right */
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Logo */
+.hero-header .logo {
+  color: gold;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Social buttons */
+.hero-header .socials {
+  display: flex;
+  gap: 10px;
+}
