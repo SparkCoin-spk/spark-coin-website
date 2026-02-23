@@ -187,3 +187,19 @@ body {
   display: flex;
   gap: 10px;
 }
+/* About & Utility Sections */
+.about, .utility {
+  text-align: center;
+  padding: 40px 20px;
+  color: white;
+  background-color: #111; /* dark background */
+  border-radius: 15px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 0 20px gold; /* glowing box */
+  transition: box-shadow 0.3s;
+}
+
+.about:hover, .utility:hover {
+  box-shadow: 0 0 40px gold; /* glow when hover */
+}
