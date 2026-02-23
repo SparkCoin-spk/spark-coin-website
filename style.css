@@ -243,3 +243,19 @@ body {
 .about:hover, .utility:hover, .token-box:hover, .roadmap:hover {
   box-shadow: 0 0 40px gold; /* glowing effect on hover */
 }
+/* Force Tokenomics section to match other boxes */
+.tokenomics {
+  text-align: center;
+  padding: 60px 20px;
+  color: white;
+  background-color: #111;
+  border-radius: 15px;
+  margin: 60px auto;
+  max-width: 800px;
+  box-shadow: 0 0 20px gold;
+  transition: box-shadow 0.3s;
+}
+
+.tokenomics:hover {
+  box-shadow: 0 0 40px gold;
+}
