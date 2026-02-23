@@ -227,3 +227,19 @@ body {
   box-shadow: 0 0 20px gold;  
   transition: box-shadow 0.3s;
 }
+/* Uniform glowing boxes for all main sections */
+.about, .utility, .token-box, .roadmap {
+  text-align: center;
+  padding: 60px 20px; /* vertical padding sa loob ng box */
+  color: white;
+  background-color: #111; /* dark theme */
+  border-radius: 15px;
+  margin: 60px auto; /* space sa pagitan ng boxes */
+  max-width: 800px; /* parehong width lahat */
+  box-shadow: 0 0 20px gold;  
+  transition: box-shadow 0.3s;
+}
+
+.about:hover, .utility:hover, .token-box:hover, .roadmap:hover {
+  box-shadow: 0 0 40px gold; /* glowing effect on hover */
+}
