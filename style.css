@@ -102,3 +102,67 @@ body {
   50% { transform: translateY(500px) scaleX(1.5); opacity: 0.2; }
   100% { transform: translateY(-150px) scaleX(1); opacity: 0; }
 }
+
+/* Logo sa upper left */
+.logo {
+  color: gold; /* kulay gold */
+  font-size: 28px; /* size lumaki */
+  font-weight: bold;
+}
+
+/* Hero title */
+.hero h1 {
+  color: gold; /* kulay gold SPARK COIN (SPK) */
+  font-size: 36px; /* lumaki ang title */
+  text-align: center;
+}
+
+/* Hero logo image */
+.logo-img {
+  width: 150px; /* lumaki ang logo */
+  animation: glowLogo 2s infinite alternate;
+}
+
+/* Logo glow animation */
+@keyframes glowLogo {
+  0% { filter: drop-shadow(0 0 5px gold); }
+  100% { filter: drop-shadow(0 0 20px gold); }
+}
+
+/* Social buttons (Twitter & Telegram) */
+.social-button {
+  display: inline-block;
+  padding: 8px 20px;
+  margin: 5px;
+  border: 2px solid gold;
+  border-radius: 10px;
+  color: gold;
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.social-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px gold;
+}
+
+/* About & Utility Sections */
+.about, .utility {
+  text-align: center;
+  padding: 40px 20px;
+  color: white;
+  background-color: #111; /* dark background */
+  border-radius: 15px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 0 20px gold; /* glowing box */
+}
+
+/* Tokenomics & Roadmap boxes glow */
+.token-box.glow, .roadmap .glow {
+  box-shadow: 0 0 25px gold;
+  transition: box-shadow 0.3s;
+}
+.token-box.glow:hover, .roadmap .glow:hover {
+  box-shadow: 0 0 40px gold;
+}
