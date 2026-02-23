@@ -1,0 +1,104 @@
+
+/* Basic reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.logo-img {
+  width: 150px;
+  animation: glowLogo 2s infinite alternate;
+}
+
+@keyframes glowLogo {
+  0% { filter: drop-shadow(0 0 5px gold); }
+  100% { filter: drop-shadow(0 0 20px gold); }
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 25px;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid gold;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px gold;
+}
+
+/* Tokenomics */
+.tokenomics {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.token-box {
+  display: inline-block;
+  border: 2px solid gold;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px;
+  transition: box-shadow 0.3s;
+}
+
+.token-box.glow:hover {
+  box-shadow: 0 0 25px gold;
+}
+
+/* Roadmap */
+.roadmap {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.roadmap .glow {
+  border: 2px solid gold;
+  border-radius: 10px;
+  padding: 20px;
+  display: inline-block;
+  box-shadow: 0 0 15px gold;
+}
+
+/* Lightning animation */
+.lightning-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.lightning {
+  position: absolute;
+  width: 2px;
+  height: 100px;
+  background: linear-gradient(white, gold);
+  opacity: 0.2;
+  animation: strike 1.5s infinite;
+}
+
+@keyframes strike {
+  0% { transform: translateY(-150px) scaleX(1); opacity: 0; }
+  20% { opacity: 1; }
+  50% { transform: translateY(500px) scaleX(1.5); opacity: 0.2; }
+  100% { transform: translateY(-150px) scaleX(1); opacity: 0; }
+}
